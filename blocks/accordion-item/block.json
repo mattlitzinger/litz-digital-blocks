@@ -1,0 +1,21 @@
+{
+	"apiVersion": 2,
+	"title": "Accordion Item",
+	"description": "",
+	"textdomain": "litz-digital",
+	"name": "litz-digital/accordion-item",
+	"parent": [ "litz-digital/accordion" ],
+	"category": "formatting",
+	"icon": "editor-justify",
+	"attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "content": {
+            "type": "string"
+        }
+    },
+	"editorScript": "file:../../build/index.js",
+	"editorStyle": "file:../../build/style-index.css",
+	"style": "file:../../build/style-index.css"
+}
