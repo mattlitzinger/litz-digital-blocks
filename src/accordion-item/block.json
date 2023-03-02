@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "litz-digital/accordion-item",
+	"version": "0.1.0",
+	"title": "Accordion Item",
+	"description": "",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "accordion-item",
+	"category": "formatting",
+	"icon": "editor-justify",
+	"attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "content": {
+            "type": "string"
+        }
+    },
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./style-index.css",
+	"style": "file:./style-index.css"
+}

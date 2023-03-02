@@ -1,0 +1,65 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.accordion-item {
+  margin-top: -1px;
+  padding: 20px 0;
+  border-top: 1px solid var(--lighter-grey);
+  border-bottom: 1px solid var(--lighter-grey);
+
+  .accordion-item--title {
+    margin-bottom: 0;
+
+    button {
+      display: flex;
+      background: none; 
+      border: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: left;
+      color: inherit;
+      cursor: pointer;
+
+      &::before {
+        content: "\f345";
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin-right: 12px;
+        font-weight: 400;
+        font-family: Dashicons;
+        font-size: 1rem;
+        text-align: center;
+        color: var(--blue);
+        // transform: rotate(90deg);
+        transform-origin: center;
+        transition: color 200ms linear, transform 200ms linear;
+      }
+
+      &[aria-expanded="true"]::before {
+        transform: rotate(90deg);
+      }
+
+      &:hover::before,
+      &:focus::before {
+        color: var(--orange);
+      }
+    }
+  }
+
+  .accordion-item--desc {
+    margin-top: 14px;
+    padding-left: 32px;
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
